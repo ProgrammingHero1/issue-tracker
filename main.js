@@ -65,7 +65,9 @@ const fetchIssues = () => {
                               <p><span class="label label-info ${
 																status === "Closed" ? "text-danger" : ""
 															}"> ${status} </span></p>
-                              <h3> ${description} </h3>
+                              <h3 class="${
+																status === "Closed" ? "sharnk" : ""
+															}"> ${description} </h3>
                               <p><span class="glyphicon glyphicon-time"></span> ${severity}</p>
                               <p><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
                               <a href="#" onclick="closeIssue(${id})" class="btn btn-warning">Close</a>
